@@ -11,7 +11,9 @@ public class EmployeeList : ObservableCollection<Employee>
         {
             string json = File.ReadAllText(jsonFile.FullName);
             var employees = JsonConvert.DeserializeObject<List<Employee>>(json);
-            return new EmployeeList(employees);
+            if (employees != null)
+                return new EmployeeList(employees);
+            return null;
         }
         catch
         {
@@ -32,7 +34,7 @@ public class EmployeeList : ObservableCollection<Employee>
 
     public IEnumerable<string> GetMainWorkplaces()
     {
-        return this.Select(employee => employee.MainWorkplace).Distinct().OrderBy(workplace => workplace);
+        return this.Select(employee => employee.MainWorkplace).Where(w => w != null).Cast<string>().Distinct().OrderBy(workplace => workplace).ToList();
     }
 
     public SearchResult Search(string? mainWorkplace = null, string? position = null, string? name = null)

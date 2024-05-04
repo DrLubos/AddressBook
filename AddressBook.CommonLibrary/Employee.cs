@@ -4,10 +4,10 @@ namespace AddressBook.CommonLibrary;
 
 public class Employee : INotifyPropertyChanged
 {
-    private string name;
-    private string position;
+    private string name = string.Empty;
+    private string position = string.Empty;
     private string? phone;
-    private string email;
+    private string email = string.Empty;
     private string? room;
     private string? mainWorkplace;
     private string? workplace;
