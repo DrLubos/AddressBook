@@ -1,0 +1,59 @@
+﻿<Window x:Class="AddressBook.EditorWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressBook.EditorWpfApp"
+        mc:Ignorable="d"
+        Title="Adresát zamestnancov" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Súbor">
+                <MenuItem Header="Nový" Click="NewClick"/>
+                <MenuItem Header="Otvoriť" Click="OpenClick"/>
+                <MenuItem Header="Uložiť ako..." Click="SaveClick"/>
+                <MenuItem Header="Skončiť" Click="EndClick"/>
+            </MenuItem>
+            <MenuItem Header="Úpravy">
+                <MenuItem Header="Pridať..." Click="AddOption"/>
+                <MenuItem Name="EditMenuOption" Header="Editovať..." Click="EditOption" IsEnabled="False"/>
+                <MenuItem Name="DeleteMenuOption" Header="Odstrániť" Click="DeleteOption" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Header="Pomocník">
+                <MenuItem Header="O programe..." Click="AboutClick"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Margin="5" Click="AddOption" Content="Pridať..." HorizontalAlignment="Left" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <Button Name="EditButtonDef" Grid.Column="1" Margin="5" Click="EditOption" Content="Editovať..." HorizontalAlignment="Left" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
+            <Button Name="DeleteButtonDef" Grid.Column="2" Margin="5" Click="DeleteOption" Content="Odstrániť" HorizontalAlignment="Left" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
+            <TextBlock Grid.Column="3" Margin="5" Text="Počet: " HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Name="valuesCount" Grid.Column="4" Margin="5" Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+            <Button Grid.Column="5" Margin="5" Click="SearchButton" Content="Vyhľadávať..." HorizontalAlignment="Right" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
+        </Grid>
+        <DataGrid Grid.Row="2" Name="DataGrid" ItemsSource="{Binding Employees}" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged" Loaded="DataGrid_Loaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Zamestnanec" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Funkcia" Binding="{Binding Position}"/>
+                <DataGridTextColumn Header="Telefon" Binding="{Binding Phone}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Miestnost" Binding="{Binding Room}"/>
+                <DataGridTextColumn Header="Hlavne Pracovisko" Binding="{Binding MainWorkplace}"/>
+                <DataGridTextColumn Header="Pracovisko" Binding="{Binding Workplace}" Width="*" MinWidth="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
