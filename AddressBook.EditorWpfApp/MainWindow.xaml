@@ -42,9 +42,9 @@
             <Button Name="DeleteButtonDef" Grid.Column="2" Margin="5" Click="DeleteOption" Content="Odstrániť" HorizontalAlignment="Left" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
             <TextBlock Grid.Column="3" Margin="5" Text="Počet: " HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Name="valuesCount" Grid.Column="4" Margin="5" Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
-            <Button Grid.Column="5" Margin="5" Click="SearchButton" Content="Vyhľadávať..." HorizontalAlignment="Right" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
+            <Button Name="SearchButtonDef" Grid.Column="5" Margin="5" Click="SearchButton" Content="Vyhľadávať..." HorizontalAlignment="Right" Padding="10,7" RenderOptions.BitmapScalingMode="HighQuality" IsEnabled="False"/>
         </Grid>
-        <DataGrid Grid.Row="2" Name="DataGrid" ItemsSource="{Binding Employees}" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged" Loaded="DataGrid_Loaded">
+        <DataGrid Grid.Row="2" Name="DataGrid" ItemsSource="{Binding Employees}" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged" SelectionMode="Single" Loaded="DataGrid_Loaded">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Zamestnanec" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Funkcia" Binding="{Binding Position}"/>

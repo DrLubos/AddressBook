@@ -31,7 +31,17 @@ namespace AddressBook.EditorWpfApp
 
         private void NewClick(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("New");
+            if (edited)
+            {
+                var result = MessageBox.Show(this, "Adresár bol zmenený. Chcete ho uložiť?", "Uložiť adresár", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.Yes);
+                if (result == MessageBoxResult.Yes)
+                {
+                    SaveClick(sender, e);
+                }
+            }
+            list?.Clear();
+            UpdateValuesCount();
+            edited = false;
         }
 
         private void OpenClick(object sender, RoutedEventArgs e)
@@ -71,7 +81,8 @@ namespace AddressBook.EditorWpfApp
         {
             if (edited)
             {
-                var result = MessageBox.Show("Neuložené zmeny. Chcete odísť?", "Neuložené zmeny", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                var result = MessageBox.Show(this, "Neuložené zmeny. Chcete odísť?", "Neuložené zmeny", 
+                    MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                 if (result == MessageBoxResult.Yes)
                 {
                     Application.Current.Shutdown();
@@ -120,18 +131,16 @@ namespace AddressBook.EditorWpfApp
 
         private void AddOption(object sender, RoutedEventArgs e)
         {
+            // If je generovany AI
             var newEmployee = new Employee();
             var employeeWindow = new EmployeeWindow(newEmployee);
-            if (employeeWindow.ShowDialog() == true)
+            employeeWindow.ShowDialog();
+            if (employeeWindow.DialogResult.HasValue && employeeWindow.DialogResult.Value)
             {
-                    if (list == null)
-                    {
-                        list = new EmployeeList(
-                            new Employee[1]);
-                    }
-                    list.Add(newEmployee);
-                    DataGrid.ItemsSource = list;
-                    edited = true;
+                list?.Add(newEmployee);
+                DataGrid.ItemsSource = list;
+                edited = true;
+                UpdateValuesCount();
             }
         }
 
@@ -174,18 +183,33 @@ namespace AddressBook.EditorWpfApp
 
         private void SearchButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Search");
+            var searchWindow = new SearchWindow(list);
+            searchWindow.SearchCompleted += SearchWindow_SearchCompleted;
+            searchWindow.ShowDialog();
+        }
+
+        private void SearchWindow_SearchCompleted(object sender, SearchEventArgs e)
+        {
+            // Metoda generovana AI
+            if (e.FilteredResult != null)
+            {
+                list = new EmployeeList(e.FilteredResult.Employees);
+                DataGrid.ItemsSource = list;
+                edited = true;
+                UpdateValuesCount();
+            }
         }
 
         private void UpdateValuesCount()
         {
-            if (list != null)
+            valuesCount.Text = list?.Count.ToString();
+            if (list?.Count > 0)
             {
-                valuesCount.Text = list.Count.ToString();
+                SearchButtonDef.IsEnabled = true;
             }
             else
             {
-                valuesCount.Text = "0";
+                SearchButtonDef.IsEnabled = false;
             }
         }
 
