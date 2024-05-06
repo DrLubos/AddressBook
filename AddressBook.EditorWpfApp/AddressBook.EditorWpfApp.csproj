@@ -12,4 +12,10 @@
     <ProjectReference Include="..\AddressBook.CommonLibrary\AddressBook.CommonLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="EmployeeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>

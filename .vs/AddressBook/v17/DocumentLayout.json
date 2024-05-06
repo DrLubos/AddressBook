@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lubos\\Desktop\\AddressBook\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7195532-6B61-43BC-BDA1-C600E85911A7}|AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.commonlibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7195532-6B61-43BC-BDA1-C600E85911A7}|AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj|solutionrelative:addressbook.commonlibrary\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\employeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\employeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.CommonLibrary\\Employee.cs",
+              "RelativeDocumentMoniker": "AddressBook.CommonLibrary\\Employee.cs",
+              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.CommonLibrary\\Employee.cs",
+              "RelativeToolTip": "AddressBook.CommonLibrary\\Employee.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwG0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T12:19:26.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "RelativeToolTip": "AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwBoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:57:20.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAADwv28AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T10:24:00.564Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -12,6 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AddressBook.CommonLibrary;
+using System.ComponentModel;
 
 namespace AddressBook.EditorWpfApp
 {
@@ -20,10 +21,12 @@ namespace AddressBook.EditorWpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        EmployeeList? list = null;
+        EmployeeList? list = new EmployeeList(new Employee[0]);
+        private bool edited = false;
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void NewClick(object sender, RoutedEventArgs e)
@@ -40,30 +43,44 @@ namespace AddressBook.EditorWpfApp
             if (dialog.ShowDialog() == true)
             {
                 list = AddressBook.CommonLibrary.EmployeeList.LoadFromJson(new System.IO.FileInfo(dialog.FileName));
+                DataGrid.ItemsSource = list;
+                UpdateValuesCount();
+                edited = false;
             }
-            DataGrid.ItemsSource = list;
-            UpdateValuesCount();
         }
 
         private void SaveClick(object sender, RoutedEventArgs e)
         {
-            if (list == null)
+            if (list == null || list.Count < 1)
             {
-                MessageBox.Show("No values to save");
+                MessageBox.Show("No values to save", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             var dialog = new SaveFileDialog
             {
-                Filter = "CSV Files (*.csv)|*.csv"
+                Filter = "JSON Files (*.json)|*.json"
             };
             if (dialog.ShowDialog() == true)
             {
                 list.SaveToJson(new System.IO.FileInfo(dialog.FileName));
+                edited = false;
             }
         }
 
         private void EndClick(object sender, RoutedEventArgs e)
         {
+            if (edited)
+            {
+                var result = MessageBox.Show("Neuložené zmeny. Chcete odísť?", "Neuložené zmeny", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Application.Current.Shutdown();
+                }
+                else
+                {
+                    return;
+                }
+            }
             Application.Current.Shutdown();
         }
 
@@ -103,17 +120,45 @@ namespace AddressBook.EditorWpfApp
 
         private void AddOption(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete");
+            var newEmployee = new Employee();
+            var employeeWindow = new EmployeeWindow(newEmployee);
+            if (employeeWindow.ShowDialog() == true)
+            {
+                    if (list == null)
+                    {
+                        list = new EmployeeList(
+                            new Employee[1]);
+                    }
+                    list.Add(newEmployee);
+                    DataGrid.ItemsSource = list;
+                    edited = true;
+            }
         }
 
         private void EditOption(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete");
+            var selectedEmployee = DataGrid.SelectedItem as Employee;
+            if (selectedEmployee != null)
+            {
+                selectedEmployee.PropertyChanged += DetectEdit;
+
+                var employeeWindow = new EmployeeWindow(selectedEmployee);
+                employeeWindow.Closed += (s, args) =>
+                {
+                    selectedEmployee.PropertyChanged -= DetectEdit;
+                };
+                employeeWindow.ShowDialog();
+            }
+        }
+
+        private void DetectEdit(object? sender, EventArgs e)
+        {
+            edited = true;
         }
 
         private void DeleteOption(object sender, RoutedEventArgs e)
         {
-            // Pomoc od AI
+            // Vygenerovane od AI, aby som videl ako to asi funguje, bez toho aby som to musel ja hladat
             var selectedEmployee = DataGrid.SelectedItem as Employee;
             if (selectedEmployee != null)
             {
@@ -122,13 +167,14 @@ namespace AddressBook.EditorWpfApp
                 {
                     list?.Remove(selectedEmployee);
                     UpdateValuesCount();
+                    edited = true;
                 }
             }
         }
 
         private void SearchButton(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete");
+            MessageBox.Show("Search");
         }
 
         private void UpdateValuesCount()
