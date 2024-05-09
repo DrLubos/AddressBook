@@ -21,7 +21,7 @@ namespace AddressBook.EditorWpfApp
     /// </summary>
     public partial class SearchWindow : Window
     {
-        EmployeeList? list = null;
+        readonly EmployeeList? list = null;
         SearchResult? filteredList = null;
 
         public SearchWindow(EmployeeList list)

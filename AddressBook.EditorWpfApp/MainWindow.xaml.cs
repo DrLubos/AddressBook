@@ -21,7 +21,7 @@ namespace AddressBook.EditorWpfApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        EmployeeList? list = new EmployeeList(new Employee[0]);
+        EmployeeList? list = new([]);
         private bool edited = false;
         public MainWindow()
         {
@@ -146,8 +146,7 @@ namespace AddressBook.EditorWpfApp
 
         private void EditOption(object sender, RoutedEventArgs e)
         {
-            var selectedEmployee = DataGrid.SelectedItem as Employee;
-            if (selectedEmployee != null)
+            if (DataGrid.SelectedItem is Employee selectedEmployee)
             {
                 selectedEmployee.PropertyChanged += DetectEdit;
 
@@ -168,8 +167,7 @@ namespace AddressBook.EditorWpfApp
         private void DeleteOption(object sender, RoutedEventArgs e)
         {
             // Vygenerovane od AI, aby som videl ako to asi funguje, bez toho aby som to musel ja hladat
-            var selectedEmployee = DataGrid.SelectedItem as Employee;
-            if (selectedEmployee != null)
+            if (DataGrid.SelectedItem is Employee selectedEmployee)
             {
                 var result = MessageBox.Show("Chcete odstrániť vybraného zamestnanca?", "Odstrániť zamestnanca", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                 if (result == MessageBoxResult.Yes)
@@ -183,12 +181,16 @@ namespace AddressBook.EditorWpfApp
 
         private void SearchButton(object sender, RoutedEventArgs e)
         {
+            if (list == null)
+            {
+                return;
+            }
             var searchWindow = new SearchWindow(list);
             searchWindow.SearchCompleted += SearchWindow_SearchCompleted;
             searchWindow.ShowDialog();
         }
 
-        private void SearchWindow_SearchCompleted(object sender, SearchEventArgs e)
+        private void SearchWindow_SearchCompleted(object? sender, SearchEventArgs e)
         {
             // Metoda generovana AI
             if (e.FilteredResult != null)

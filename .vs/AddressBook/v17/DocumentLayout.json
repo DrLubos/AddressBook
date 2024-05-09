@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lubos\\Desktop\\AddressBook\\",
+  "WorkspaceRootPath": "\\\\Mac\\Home\\Desktop\\AddressBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\employeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\employeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0516643D-5DB6-47C4-8D6E-EB9B0633E681}|AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj|\\\\mac\\home\\desktop\\addressbook\\addressbook.viewerconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0516643D-5DB6-47C4-8D6E-EB9B0633E681}|AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj|\\\\mac\\home\\desktop\\addressbook\\addressbook.viewerconsoleapp\\addressbook.viewerconsoleapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{F7195532-6B61-43BC-BDA1-C600E85911A7}|AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj|\\\\mac\\home\\desktop\\addressbook\\addressbook.commonlibrary\\addressbook.commonlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42DEB32F-9704-46B5-8983-355530BC6590}|AddressBook.ViewerWpfApp\\AddressBook.ViewerWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.viewerwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42DEB32F-9704-46B5-8983-355530BC6590}|AddressBook.ViewerWpfApp\\AddressBook.ViewerWpfApp.csproj|solutionrelative:addressbook.viewerwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|\\\\Mac\\Home\\Desktop\\AddressBook\\addressbook.editorwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|c:\\users\\lubos\\desktop\\addressbook\\addressbook.editorwpfapp\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|solutionrelative:addressbook.editorwpfapp\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|\\\\Mac\\Home\\Desktop\\AddressBook\\addressbook.editorwpfapp\\searchwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|\\\\mac\\home\\desktop\\addressbook\\addressbook.editorwpfapp\\employeewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42DEB32F-9704-46B5-8983-355530BC6590}|AddressBook.ViewerWpfApp\\AddressBook.ViewerWpfApp.csproj|\\\\Mac\\Home\\Desktop\\AddressBook\\addressbook.viewerwpfapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA1BE2D1-2CA6-4AC1-8F13-8909D767704E}|AddressBook.EditorWpfApp\\AddressBook.EditorWpfApp.csproj|\\\\Mac\\Home\\Desktop\\AddressBook\\addressbook.editorwpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +34,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "AddressBook.ViewerConsoleApp\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerConsoleApp\\Program.cs",
+              "RelativeToolTip": "AddressBook.ViewerConsoleApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:14:47.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddressBook.ViewerConsoleApp",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj",
+              "RelativeDocumentMoniker": "AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj",
+              "RelativeToolTip": "AddressBook.ViewerConsoleApp\\AddressBook.ViewerConsoleApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-09T15:14:45.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AddressBook.CommonLibrary",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj",
+              "RelativeDocumentMoniker": "AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj",
+              "RelativeToolTip": "AddressBook.CommonLibrary\\AddressBook.CommonLibrary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-09T15:14:38.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml",
               "RelativeToolTip": "AddressBook.EditorWpfApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T13:49:28.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-06T13:49:28.296Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SearchWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
               "RelativeToolTip": "AddressBook.EditorWpfApp\\SearchWindow.xaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAgwFYAAABBAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAhwBcAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T13:47:26.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "AddressBook.ViewerWpfApp\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAIwHAAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T13:30:05.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EmployeeWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
               "RelativeToolTip": "AddressBook.EditorWpfApp\\EmployeeWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "ViewState": "AQIAAFgAAAAAAgAAAMAswEUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T13:09:03.32Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lubos\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Desktop\\AddressBook\\AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "AddressBook.EditorWpfApp\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAO4AAAAAAAAAAAAAAL8AAAAJAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAhwJQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T10:24:00.564Z",
               "EditorCaption": ""

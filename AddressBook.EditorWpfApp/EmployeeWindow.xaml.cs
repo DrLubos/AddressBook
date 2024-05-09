@@ -21,8 +21,8 @@ namespace AddressBook.EditorWpfApp
     /// </summary>
     public partial class EmployeeWindow : Window
     {
-        private readonly Employee originalEmployee;
-        private readonly Employee currentEmployee;
+        private readonly Employee? originalEmployee;
+        private readonly Employee? currentEmployee;
 
         public EmployeeWindow(Employee employee)
         {
@@ -46,6 +46,11 @@ namespace AddressBook.EditorWpfApp
 
         private void CancelButton(object sender, RoutedEventArgs e)
         {
+            if (currentEmployee == null || originalEmployee == null)
+            {
+                Close();
+                return;
+            }
             currentEmployee.Name = originalEmployee.Name;
             currentEmployee.Position = originalEmployee.Position;
             currentEmployee.Phone = originalEmployee.Phone;
@@ -58,6 +63,11 @@ namespace AddressBook.EditorWpfApp
 
         public void OkButton(object sender, RoutedEventArgs e)
         {
+            if (currentEmployee == null || originalEmployee == null)
+            {
+                Close();
+                return;
+            }
             originalEmployee.Name = currentEmployee.Name;
             originalEmployee.Position = currentEmployee.Position;
             originalEmployee.Phone = currentEmployee.Phone;
